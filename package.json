@@ -1,0 +1,25 @@
+{
+  "name": "S03E06-atelier-duo-GameHub-Nassimou78",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Flamel/S03E06-atelier-duo-GameHub-Nassimou78.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Flamel/S03E06-atelier-duo-GameHub-Nassimou78/issues"
+  },
+  "homepage": "https://github.com/O-clock-Flamel/S03E06-atelier-duo-GameHub-Nassimou78#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node-dev": "^7.4.3"
+  }
+}
