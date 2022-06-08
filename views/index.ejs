@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
+<%- include('./partial/head.ejs') %>
 
-<head>
-  <meta charset="UTF-8">
-  <title>GameHub</title>
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-  <header>
+<header>
     <h1>
       <a href="/">GameHub</a>
     </h1>
@@ -16,8 +8,8 @@
      
     <ul>
        
-      <li class="playGame"> <a href="/DiceRoller">Cliquez ici pour jouer a Dice Roller ! </a> </li>
-      <li class="playGame"> <a href="/Fourchette">Cliquez ici pour jouer a Dice Roller ! </a> </li>
+      <li class="playGame"> <a href="/game/diceRoller">Cliquez ici pour jouer a Dice Roller ! </a> </li>
+      <li class="playGame"> <a href="/game/fourchette">Cliquez ici pour jouer au jeu de la Fourchette ! </a> </li>
  
     </ul>
     </nav>
@@ -28,9 +20,5 @@
 
   </main>
 
-  <footer>
-    
-  </footer>
-</body>
-
-</html>
+  
+<%- include('./partial/footer.ejs') %>
