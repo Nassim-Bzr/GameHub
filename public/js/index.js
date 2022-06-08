@@ -44,11 +44,7 @@ app.get("/", (req, res) => {
 
   
   // On crée la route dynamique qui nous permet de récupérer le nom de la ville à partir de l'url
-app.get('/game/:gameName', (request, response) => {
-const UrlGameName = request.params.gameName;
-console.log(UrlGameName);
- 
-})
+  
 
   app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
