@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+
+<main>
+  <h3>page de recherche</h3>
+  <form action="/search/results">
+    <label for="search-input">nom du jeu recherché</label>
+    <input class="search-form--input" type="text" name="search" id="search-input" placeholder="ex: pacman">
+    <button class="search-form--button" type="submit">Envoyez</button>
+  </form>
+</main>
+
+<%- include('partials/footer.ejs') %>

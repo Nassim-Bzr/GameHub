@@ -10,12 +10,7 @@
     "title": "Dice Roller",
     "cssFile": "diceRoller.css",
     "jsFile": "diceRoller.js"
-  },
-  
-  {
-    "name": "jeuxRPG",
-    "title": "Jeux RPG",
-    "cssFile": "rpg.css",
-    "jsFile": "rpg.js"
   }
+  
+ 
 ]

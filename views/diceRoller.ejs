@@ -1,36 +1,24 @@
-<%- include('./partial/head.ejs') %>
-  <nav>
-    <h1>
-      <a href="/">GameHub</a>
-    </h1>
-    
-  </nav>
+<h3>Dice Roller</h3>
 
-  <h3>Dice Roller</h3>
-
-    <div id="welcome">
-        <button id="play" class="btn" type="button">Jouer</button>
+<div id="welcome">
+    <button id="play" class="btn" type="button">Jouer</button>
+</div>
+<div id="app" class="hidden">
+    <div class="form">
+        <form id="game-form">
+            <input
+                type="range"
+                id="dice-number-input"
+                value="3"
+                min="1"
+                max="20"
+            >
+            <span id="dice-number">3</span>
+            <button class="btn">Valider le nombre de dés et lancer</button>
+        </form>
     </div>
-    <div id="app" class="hidden">
-        <div class="form">
-            <form id="game-form">
-                <input
-                    type="range"
-                    id="dice-number-input"
-                    value="3"
-                    min="1"
-                    max="20"
-                >
-                <span id="dice-number">3</span>
-                <button class="btn">Valider le nombre de dés et lancer</button>
-            </form>
-        </div>
-        <div id="game">
-            <div class="board" id="player"></div>
-            <div class="board" id="dealer"></div>
-        </div>
+    <div id="game">
+        <div class="board" id="player"></div>
+        <div class="board" id="dealer"></div>
     </div>
-
-    <script src="/js/diceRoller.js"></script>
-    <%- include('./partial/footer.ejs') %>
-
+</div>

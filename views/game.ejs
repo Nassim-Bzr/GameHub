@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs') %>
+
+<main>
+  <%# on vérifie qu'on a bien récupérer un jeu %>
+  <%# on test son existence en passant par l'objet locals %>
+  <%# plutot que par la variable game pour éviter la levée d'une exception %>
+
+  <% if(locals.game) { %>
+
+    <%# si le jeu necessaite un fichier css spécifique %>
+    <% if(game.cssFile) { %>
+      <link rel="stylesheet" href="/css/<%= game.cssFile %>">
+    <% } %>
+
+    <%# on inclut le template du jeu %>
+    <%- include(game.name) %>
+
+    <%# on inclut le fichier js du jeu %>
+    <script src="/js/<%= game.jsFile %>"></script>
+
+  <% } else { %>
+    <%# si locals.game n'est pas défini, on affiche quee ce jeu n'existe pas %>
+    <h3>Aucun jeu n'est sélectionné</h3>
+  <% } %>
+</main>
+
+<%- include('partials/footer.ejs') %>

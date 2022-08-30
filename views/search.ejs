@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+<main>
+  <h3>résultats de la recherche</h3>
+  <% if(!gamesFound.length){ %>
+    <p>Aucun jeu ne correspond à votre recherche</p>
+  <% } else { %>
+    <%= gamesFound.length %> jeu(s) trouvé(s) 
+    <ul>
+      <% gamesFound.forEach(function(game){ %>
+        <li>
+          <a href="/game/<%= game.name %>"><%= game.title %></a>
+        </li>
+      <% }); %>
+    </ul>
+  <% } %>
+</main>
+
+<%- include('partials/footer.ejs') %>

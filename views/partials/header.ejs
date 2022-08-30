@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">Mon GameHub</a>
+    </h1>
+    <nav>
+      <ul>
+        <% for (game of games) { %>
+          <li>
+            <a href="/game/<%= game.name %>"><%= game.title %></a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
